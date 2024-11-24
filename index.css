@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+    /* font-family: "Prompt", sans-serif;
+    font-family: "Roboto", serif;
+    font-family: "Dancing Script", serif; */
+    /* background: linear-gradient(200deg, rgb(1, 195, 255), rgb(16, 107, 135)); */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* background-color: #ccc; */
+    
+    background: #1d1c1c;
+    
+}
+
+.navcont {
+    display: flex;
+}
+
+.Home {
+    width: 100%;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-header h1 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #F46509;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(121, 100, 5);
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li .Checklist {
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.nav-list li .Checklist a {
+   width: 150px;
+   height: 45px;
+   text-align: center;
+   font-size: 1rem;
+   padding-left: 1.3rem;
+ 
+}
+
+.menu {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.nav-Mobilelist {
+    display: none;
+    color: white;
+}
+
+/* hero starts */
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    
+}
+
+.hero-header h1{
+    margin-top: 7rem;
+    font-size: 2rem;
+    font-family: "Prompt", sans-serif;
+    letter-spacing: 3px;
+    color: #fff; 
+    text-transform: capitalize;
+
+}
+
+.btn {
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    margin-left: 5rem;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.btn button {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn button:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* .btn button::before {
+    content: '';
+    width: 150px;
+    height: 40px;
+    background-color: #232222;
+    color: #ccc;
+    position: absolute;
+    border-radius: 50px;
+    top: -600px;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+} 
+
+.btn button::after {
+    content: '';
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    color: #ccc;
+    position: absolute;
+    top: -600px;
+    left: 0;
+    border-radius: 50px;
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.btn button::before:hover  {
+    top: 0;
+    opacity: 1;
+} */
+
+/* hero ends */
+
+
+/* card starts */
+
+.myservices {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #F46509, #e88547);
+    padding: 2rem 0;
+}
+
+.myservices-header {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.myservicespara {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.myservicepara2 {
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 1.8;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.myservicepara2 span {
+    background-color: #fff;
+    padding: 0.1rem;
+    font-weight: 700;
+}
+
+
+.serviceCards {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #1b1919;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.card-top img {
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-bottom {
+    color: #d2c1c1;
+}
+
+.card-bottom h2 {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #fff;
+    padding: 1rem 0.5rem;
+}
+
+.card-bottom ul {
+    list-style: none;
+}
+
+.card-bottom ul li span {
+    margin-right: 1.2rem;
+    color: #F46509;
+}
+
+.card-bottom ul li {
+    font-size: 0.8rem;
+    padding: 1rem 1rem 0.5rem 2rem;
+}
+
+
+
+/* card ends */
+
+
+.readbooks {
+    background-color: #000;
+    min-height: 300px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #F46509;
+}
+
+.readbooks h1 {
+    color: #F46509;
+    font-size: 2rem;
+    
+}
+
+.readbooks p {
+    color: #ccc;
+}
+
+.readapp p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.trackimg img {
+    width: 300px;
+}
+
+/* offer */
+
+.offer {
+    color: #ccc;
+}
+
+.offerheader  {
+    margin-bottom: 7rem;
+}
+
+.offerheader h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin:1rem 1rem 1rem 5rem;
+}
+
+.offerheader h1 span {
+    color: #F46509;
+}
+
+.what {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.featurelist, .benefitlist {
+    list-style: none;
+    margin: 3rem 0;
+}
+
+.features h2, .benefit h2 {
+    color: #F46509;
+}
+
+.featurelist li, .benefitlist li {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+   
+}
+
+.check {
+    color: rgb(6, 201, 35);
+    margin-right: 1rem;
+}
+
+/* hot offers */
+.hotoffer {
+    background: linear-gradient(180deg, #F46509, #8f3b06, #401a02);
+    height: 100%;
+}
+
+
+.hotoffer-header h1 {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.hotoffer-header p {
+    font-size: 1.5rem;
+    color: #291001;
+    font-weight: 700;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hotoffercards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 0 0 2rem;
+    cursor: pointer;
+}
+
+.hotoffercard {
+    width: 250px;
+    background-color: #000;
+    border-radius: 20px;
+    border-bottom: 5px solid #F46509; 
+    transition: 0.8s;
+}
+
+.hotoffercard:hover{
+    transform: scale(1.1);
+}
+
+.hotoffercard h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #F46509;
+    opacity: 0.8;
+}
+
+.hotoffercard p {
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    color: #ccc;
+}
+
+
+
+.animate{
+    color: #000;
+    background-color: #fff;
+    
+}
+
+
+
+.talkbtn {
+    text-align: center;
+}
+
+.chatbtn {
+    width: 250px;
+    height: 45px;
+    background: linear-gradient(90deg,#8f3904, #c99898);
+    color: #ccc;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 2rem;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: 1s;
+    
+}
+
+.chatbtn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #c99898, #8f3904);
+    box-shadow: 5px 5px 5px 5px rgba(165, 102, 50, 0.25);
+}
+
+/* freechecklist form */
+
+.freechecklist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.freecheclist-header h1 {
+    font-size: 2rem;
+    color: #F46509;
+    margin: 1rem;
+}
+
+.my-form {
+    width: 350px;
+    height: 100%;
+    border: 1px solid #F46509;
+    box-shadow: inset 5px 0px 5px 0px #F46509;
+    border-radius: 10px;
+    color: #F46509;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 2rem 0;
+}
+
+
+.name, .email, .phone {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.name input, .email input, .phone input {
+    width: 200px;
+    height: 35px;
+}
+
+.email input {
+    margin-left: 0.4rem;
+}
+
+
+ .submit {
+    width: 150px;
+    height: 35px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin: 1rem 1rem 1rem 6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+
+ .submit:hover {
+    background-color: #F46509;
+ }
+
+ /* experience */
+
+.experience {
+    background: #181818cc;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+
+ /*CounterCard */
+
+
+.counterCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0rem 0rem 3rem 2rem;
+}
+
+.countercontent p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F46509;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+
+.expCount {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #cf8456;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.expCount span {
+    font-size: 2rem;
+}
+
+
+
+.aboutme-content .main-aboutcont img{
+    width: 350px;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 50px;
+    transition: 1s;
+    margin-left: 1rem;
+}
+
+.aboutme-para {
+    color: #fff;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    padding: 1rem 4rem 1rem 3rem;
+    line-height: 1.8;
+}
+
+.aboutme-content img:hover {
+    box-shadow: 0px 0px 15px 15px #993c02;
+    filter: blur(0px);
+    opacity: 1;
+}
+
+/* swiper */
+
+.slideshow {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30rem;
+}
+
+.slide-wrapper {
+    display: flex;
+    transition: transform .5s ease-in-out;
+    width: 50%;
+}
+
+
+.testimonialCard {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.testimonialCard h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.testimonialCard p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.testimonialCard .reviewpara {
+    font-style: italic;
+    color: #666;
+}
+
+ /* Footer */
+
+ .footer {
+    width: 100%;
+    color: #fff;
+    background: #252323;
+ }
+
+ .footer-logo {
+    margin: 5rem;
+ }
+
+ .footer-header h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+ }
+
+ .linklist{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+ }
+
+ .linklist li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: .5s;
+ }
+
+ .linklist li a:hover {
+    color: #F46509;
+ }
+
+ .copyrights h3 {
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-align: center;
+}      
+
+
+
+
+@media  (max-width: 400px) {
+    .text {font-size: 11px}
+
+    .aboutme-content .main-aboutcont img {
+        max-width: 350px;
+    }
+
+    .slideshow {
+        max-width: 350px;
+     }
+  }
+
+@media (max-width: 1168px) {
+    .hotoffercards {
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 2rem;
+    }
+    
+}
+
+@media (max-width:1340px) {
+    .slideshow {
+        margin-left: 18rem;
+    }
+
+    .hero-header h1 {
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .hotoffercards {
+        grid-template-columns: repeat(2 , 1fr);
+        
+    }
+
+    .serviceCards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .slideshow {
+        margin-left: 8rem;
+    }
+
+    .readbooks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .readbooksheader h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .readbooksheader p {
+        text-align: center;
+    }
+
+    .trackbtn {
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-header {
+        text-align: center;
+    }
+
+    .hero-header h1 {
+        margin-top: 2rem;
+
+    }
+
+   
+}
+
+
+ /* Mobile View */
+ @media (max-width:600px) {
+    .hero-header h1 {
+        padding-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .aboutme-para  {
+        font-size: 0.6rem;
+        padding: 0 3rem;
+        margin-top: 2rem;
+    }
+
+    .btn {
+        margin-left: 2rem;
+    }
+
+    .hotoffercards {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: 0rem;
+    }
+
+
+    .offerheader h1 {
+        font-size: 1.5rem;
+    }
+
+    .hotoffer-header h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .slideshow {
+       max-width: 400px;
+    }
+
+    .slide-wrapper {
+        flex:100%;
+    }
+
+    .testimonialCard {
+        max-width: 350px;
+     }
+
+     .footer-header h1 {
+        font-size: 2rem;
+     }
+ }
+
+@media (max-width:768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 2rem;
+        color: #ccc;
+    }
+
+    .close {
+        color: #ccc;
+        font-size: 2rem;
+        float: right;
+        padding-right: 2rem;
+    }
+
+    .mobile-Navbar {
+        display: none;
+        
+    }
+
+    .nav-Mobilelist {
+        width: 100%;
+        height: 300px;
+        list-style: none; 
+        background-color: #dd7915;
+    
+    }
+
+    .nav-Mobilelist li {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 2rem;
+        
+    }
+
+    .nav-Mobilelist li a  {
+        
+        text-decoration: none;
+        color: rgb(4, 26, 52);
+        font-size: 1.2rem;
+        margin: 3rem 0 0 3rem;
+       
+    }
+
+
+    /* offercards */
+    .hotoffercards {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    
+    .slideshow {
+        margin-left: 2rem;
+    }
+
+    .testimonialCard {
+       width: 100%;
+       
+    }
+
+    .testimonialCard h1 {
+        font-size: 1.25rem;
+    }
+
+    .testimonialCard p {
+        font-size: 0.9rem;
+    }
+ 
+
+}
+
+@media (max-width:900px) {
+    
+    .what {
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+
+    .counterCard {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+}
+
+
