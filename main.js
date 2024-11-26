@@ -5,19 +5,32 @@ const mobileNavList = document.querySelector(".nav-Mobilelist")
 
 
             menu.addEventListener("click", () => {
-                mobileNav.style.display ="block"
-                mobileNavList.style.display ="block"
+                mobileNav.style.display = "block"
+                mobileNavList.style.display = "block"
                 menu.style.display = "none"
                 closebar.style.display = "block"
             })
 
             closebar.addEventListener("click", () => {
-                mobileNav.style.display ="none"
-                closebar.style.display = "none"
-                menu.style.display = "block"
+                 mobileNavList.style.display = "none"
+                 menu.style.display = "block"
+                 closebar.style.display = "none"
             })
 
-
+            window.addEventListener("resize", () => {
+                const screenWidth = window.innerWidth;
+            
+                if (screenWidth >= 768) {
+                    
+                    mobileNav.style.display = "none";
+                    menu.style.display = "none";
+                    closebar.style.display = "none";
+                } else {
+                    
+                    menu.style.display = "block";
+                    closebar.style.display = "none";
+                }
+            });
     
 
     

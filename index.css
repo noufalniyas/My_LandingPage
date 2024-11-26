@@ -37,16 +37,17 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    gap: 8rem;
+    padding: 2rem 0;
 }
 
 .nav-header h1 {
     font-family: "Prompt", sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
-    color: #77DD77;
+    color: #d6e3d6;
 }
 
 .nav-list {
@@ -102,6 +103,7 @@ body {
     align-items: center;
     gap: 2rem;
     padding-bottom: 3rem;
+    margin-top: 3rem;
     
 }
 
@@ -316,7 +318,7 @@ body {
 .offerheader h1 {
     text-align: center;
     font-size: 3rem;
-    margin:1rem 1rem 1rem 5rem;
+    margin:1rem 1rem 1rem 4rem;
 }
 
 .offerheader h1 span {
@@ -569,7 +571,7 @@ body {
 }
 
 .aboutme-content img:hover {
-    box-shadow: 0px 0px 15px 15px #993c02;
+    box-shadow: 0px 0px 10px 5px #77DD77;
     filter: blur(0px);
     opacity: 1;
 }
@@ -632,10 +634,11 @@ body {
 
  .footer-logo {
     margin: 5rem;
+    text-align: center;
  }
 
  .footer-header h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: 1rem;
     text-align: center;
  }
@@ -672,8 +675,10 @@ body {
 @media  (max-width: 400px) {
     .text {font-size: 11px}
 
+    
+
     .aboutme-content .main-aboutcont img {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     .slideshow {
@@ -690,10 +695,7 @@ body {
 }
 
 @media (max-width:1340px) {
-    .slideshow {
-        margin-left: 18rem;
-    }
-
+   
     .hero-header h1 {
         font-size: 1.5rem;
         padding-left: 3rem;
@@ -757,11 +759,16 @@ body {
 }
 
 
+
  /* Mobile View */
  @media (max-width:600px) {
     .hero-header h1 {
         padding-left: 2rem;
         font-size: 1.2rem;
+    }
+
+    .nav-header h1 {
+        font-size: 2rem;
     }
 
     .aboutme-para  {
@@ -810,19 +817,27 @@ body {
  }
 
 @media (max-width:768px) {
+
+    .navbar {
+        gap: 2rem;
+    }
     .nav-list {
         display: none;
     }
 
+    .hero {
+        padding-top: 2rem;
+    }
+
     .menu {
         display: flex;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #ccc;
     }
 
     .close {
         color: #ccc;
-        font-size: 2rem;
+        font-size: 1.5rem;
         float: right;
         padding-right: 2rem;
     }
@@ -834,7 +849,7 @@ body {
 
     .nav-Mobilelist {
         width: 100%;
-        height: 300px;
+        height: 180px;
         list-style: none; 
         background-color: #dd7915;
     
@@ -888,7 +903,7 @@ body {
     
     .what {
         flex-direction: column;
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
 
     .counterCard {
